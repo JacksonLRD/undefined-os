@@ -1,0 +1,25 @@
+{
+  "name": "undefined-os",
+  "version": "0.0.1",
+  "description": "Sistema para gerenciamento de oficinas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacksonLRD/undefined-os.git"
+  },
+  "author": "Jackson Luan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JacksonLRD/undefined-os/issues"
+  },
+  "homepage": "https://github.com/JacksonLRD/undefined-os#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^27.4.5"
+  }
+}
