@@ -1,0 +1,49 @@
+{
+  "name": "undefined-os",
+  "version": "0.0.1",
+  "description": "Sistema para gerenciamento de oficinas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon -e ts src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacksonLRD/undefined-os.git"
+  },
+  "author": "Jackson Luan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JacksonLRD/undefined-os/issues"
+  },
+  "homepage": "https://github.com/JacksonLRD/undefined-os#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^27.4.5",
+    "dotenv": "^8.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "reflect-metadata": "^0.1.13",
+    "typedi": "^0.10.0",
+    "typeorm": "0.2.38",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/body-parser": "^1.19.1",
+    "@types/cors": "^2.8.12",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.10.3",
+    "nodemon": "^2.0.15",
+    "cross-env": "^7.0.3",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+
+  }
+}
