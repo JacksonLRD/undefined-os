@@ -4,6 +4,7 @@
   "description": "Sistema para gerenciamento de oficinas",
   "main": "index.js",
   "scripts": {
+    "dev": "npx nodemon -e ts src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
