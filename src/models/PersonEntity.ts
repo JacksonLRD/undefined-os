@@ -40,11 +40,7 @@ export class Person {
   @Column({ length: 50, nullable: true })
   state?: string;
 
-  @Column({
-    type: "enum",
-    enum: PersonsRole,
-    length: 15
-  })
+  @Column({ type: "enum", enum: PersonsRole })
   role: PersonsRole;
 
   @ManyToOne(() => Company, company => company.persons)
