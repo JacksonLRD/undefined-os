@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import { ProductServiceOrder } from "./ProductServiceOrderEntity";
 
 @Entity()
 export class Product {
@@ -12,11 +13,17 @@ export class Product {
   manufacturer: string;
 
   @Column({ type: "float" })
-  price: string;
+  price: number;
 
   @Column()
   quantity: number;
 
   @Column({ nullable: true })
   criticalQuantity: number;
+
+  @OneToMany(
+    () => ProductServiceOrder,
+    productServiceOrder => productServiceOrder.product
+  )
+  productServiceOrders: ProductServiceOrder[];
 }
