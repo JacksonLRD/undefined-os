@@ -1,6 +1,8 @@
 import { StatusServiceOrder } from "../@types/enums/StatusServiceOrder";
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinTable, ManyToMany, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { ProductServiceOrder } from "./ProductServiceOrderEntity";
+import { Person } from "./PersonEntity";
+import { EquipamentServiceOrder } from "./EquipamentServiceOrderEntity";
 
 @Entity()
 export class ServiceOrder {
@@ -24,4 +26,14 @@ export class ServiceOrder {
     productServiceOrder => productServiceOrder.serviceOrder
   )
   productServiceOrders: ProductServiceOrder[];
+
+  @OneToMany(
+    () => EquipamentServiceOrder,
+    equipamentServiceOrder => equipamentServiceOrder.serviceOrder
+  )
+  equipamentServiceOrders: EquipamentServiceOrder[];
+
+  @ManyToMany(() => Person)
+  @JoinTable()
+  persons: Person[];
 }
