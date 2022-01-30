@@ -1,0 +1,16 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "2413",
+  "database": "undefined_os",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["src/app/modules/**/*Entity.ts"],
+  "migrations": ["src/app/shared/infra/typeorm/migration/migration/*.ts"],
+  "cli": {
+    "entitiesDir": "src/app/modules/**/entities",
+    "migrationsDir": "src/app/shared/infra/typeorm/migration/migration"
+  }
+}
