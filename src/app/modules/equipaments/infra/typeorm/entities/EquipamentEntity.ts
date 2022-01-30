@@ -1,13 +1,8 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity } from 'typeorm';
+import BaseEntity from '../../../../../shared/infra/typeorm/entity/BaseEntity';
 
 @Entity()
-export default class Equipament {
-  @PrimaryGeneratedColumn('uuid')
-  id!: string;
-
-  @Column({ length: 150 })
-  name!: string;
-
+export default class Equipament extends BaseEntity {
   @Column({ nullable: true })
   manufacturer!: string;
 

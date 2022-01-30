@@ -1,4 +1,4 @@
-export default interface IEquipamentDTO {
+export default interface IEquipament {
   id?: string;
   name: string;
   manufacturer?: string;
